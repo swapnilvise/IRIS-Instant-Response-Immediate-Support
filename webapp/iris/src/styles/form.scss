@@ -1,0 +1,190 @@
+.emergencyForm {
+  position: relative;
+  width: 50%;
+  margin: 20px;
+}
+.form-card {
+  @include flex-display(column, center, normal);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  background-color: $color-white;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.add-task {
+  @extend .form-card;
+  @extend .form-components;
+}
+
+.form-components {
+  h2 {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-weight: bold;
+    margin-top: 0px;
+  }
+
+  input {
+    padding: 10px;
+    border: 1px solid $color-input-border;
+    border-radius: 5px;
+    margin: 10px 0px;
+  }
+
+  .drop-dwn {
+    padding: 10px;
+    border: 1px solid $color-input-border;
+    border-radius: 5px;
+    margin: 10px 0px;
+    height: auto;
+    width: 184px;
+  }
+
+  textarea {
+    padding: 10px;
+    border: 1px solid $color-input-border;
+    border-radius: 5px;
+    margin: 10px 0px;
+    height: 100px;
+  }
+
+  .radio-group {
+    @include flex-display(row, space-evenly, center);
+  }
+
+  .form-control {
+    @include flex-display(row, space-between, center);
+
+    margin: 0px 5px 5px 0px;
+  }
+
+  .hospital-control {
+    display: contents;
+  }
+
+  button {
+    cursor: pointer;
+    border: 1px solid $color-black;
+    border-radius: 5px;
+    background-color: $color-black;
+    color: white;
+    padding: 10px;
+    margin: 0px 10px 0px 0px;
+    width: 100%;
+  }
+
+  .add-button-group {
+    @include flex-display(row, space-between, normal);
+    padding: 10px;
+  }
+}
+
+.loginContainer {
+  @include flex-display(row, center, center);
+}
+
+.loginFormContainer {
+  @extend .form-card;
+  background-color: #232323;
+  width: 20%;
+  margin-top: 2%;
+  padding: 40px;
+  color: $color-white;
+
+  .loginTitle {
+    @include flex-display(column, normal, center);
+  }
+
+  img {
+    display: flex;
+    border-radius: 50%;
+    width: 30%;
+    height: auto;
+  }
+
+  i {
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  button {
+    padding: 15px;
+    background-color: #493883;
+    border: 1px solid #493883;
+  }
+}
+
+.loginForm {
+  @include flex-display(column, normal, normal);
+
+  @extend .form-components;
+
+  input {
+    padding: 15px;
+  }
+}
+
+.signUpContainer {
+  @include flex-display(column, normal, normal);
+  img {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    margin-top: 140px;
+  }
+}
+
+.signUpFormContainer {
+  @include flex-display(column, center, center);
+  @extend .form-components;
+  margin-left: 700px;
+  margin-top: 100px;
+  align-content: center;
+}
+
+.signUpForm {
+  @include flex-display(column, normal, normal);
+  @extend .form-components;
+}
+
+.errormsg {
+  margin: 0;
+  font-size: 11px;
+  color: red;
+}
+
+.medicalHistoryContainer {
+  @include flex-display(column, center, center);
+  padding: 20px;
+
+  img {
+    width: 50%;
+    height: auto;
+    position: absolute;
+  }
+}
+
+.medical-History-Form {
+  @include flex-display(column, center, normal);
+  @extend .form-components;
+
+  .form-section {
+    @include flex-display(column, normal, center);
+    padding: 20px;
+
+    .section-control {
+      @include flex-display(row, center, normal);
+    }
+  }
+  width: 100%;
+}
+
+.changePasswordContainer {
+  @include flex-display(row, center, center);
+}
+
+.changePasswordForm {
+  @extend .form-card;
+  width: 20%;
+  margin-top: 2%;
+}
